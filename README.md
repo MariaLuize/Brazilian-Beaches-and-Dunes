@@ -1,5 +1,6 @@
-# Brazilian-Beaches-and-Dunes
-
+Brazilian-Beaches-and-Dunes
+=================
+<!--ts-->
 Visualization of final classification and statistics: https://code.earthengine.google.com/11a49b8d9773c13faf909f55f813e80c?noload=1
 
 * [Base Mosaic](#Base Mosaic)
@@ -24,6 +25,6 @@ Visualization of final classification and statistics: https://code.earthengine.g
      * [Blue:  Agreement](#Blue:  Agreement)
      * [Green: Positive-Disagreement (B&D Classification  > Reference Map)](#Green: Positive-Disagreement (B&D Classification  > Reference Map))
 
-
+<!--te-->
 
 
