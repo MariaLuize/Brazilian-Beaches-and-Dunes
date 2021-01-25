@@ -21,9 +21,9 @@ Visual Results
 <img src="/images/cropchanges.png" width="724" height="450">
 
 * [Visualization of changes in the mosaic](#Visualization-of-changes-in-the-mosaic)
-  * [Legend]
-     * [Blue: Agreement]
-     * [Green: Positive-Disagreement (B&D Classification  > Reference Map)
+  * Legend:
+     * Blue: Agreement
+     * Green: Positive-Disagreement (B&D Classification  > Reference Map)
 <img src="/images/cropmosaicChanges.png" width="724" height="450">
 
 
