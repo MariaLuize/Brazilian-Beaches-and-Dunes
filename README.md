@@ -21,11 +21,11 @@ Visual Results
 <img src="/images/cropchanges.png" width="774" height="450">
 
 * [Visualization of changes in the mosaic](#Visualization-of-changes-in-the-mosaic)
-
-<img src="/images/cropmosaicChanges.png" width="774" height="450">
   * [Legend](#Legend)
      * [Blue: Agreement](#Blue:-Agreement)
      * [Green: Positive-Disagreement (B&D Classification  > Reference Map)](#Green-Positive-Disagreement(B&D-Classification-Reference Map))
+<img src="/images/cropmosaicChanges.png" width="774" height="450">
+
 
 <!--te-->
 
