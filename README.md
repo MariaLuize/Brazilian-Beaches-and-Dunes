@@ -3,7 +3,7 @@
 Visualization of final classification and statistics: https://code.earthengine.google.com/11a49b8d9773c13faf909f55f813e80c?noload=1
 
 * Base Mosaic
-<img src="/images/cropbaseMosaic.png" width="1024" height="550">
+<img src="/images/cropbaseMosaic.png" width="924" height="450">
 
 * Reference Map - MapBiomas 4.1 Classification
 ![ReferenceMap](/images/cropReferenceMap.png)
