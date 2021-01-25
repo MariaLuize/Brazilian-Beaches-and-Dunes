@@ -29,6 +29,6 @@ Visual Results
 
 <!--te-->
 
-Solarized dark             |  Solarized Ocean
+Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes classification]
 :-------------------------:|:-------------------------:
-![](/images/cropbaseMosaic.png)  |  ![](/images/cropBandD_classification.png)
+![](/images/cropReferenceMap.png)  |  ![](/images/cropBandD_classification.png)
