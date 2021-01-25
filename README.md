@@ -5,7 +5,7 @@ Visualization of final classification and statistics: https://code.earthengine.g
 Visual Results
 =================
 <!--ts-->
-* [Base Mosaic](#Base Mosaic)
+* [Base Mosaic](#Base-Mosaic)
 <img src="/images/cropbaseMosaic.png" width="774" height="450">
 
 * [Reference Map - MapBiomas 4.1 Classification](#Reference-Map-MapBiomas-4.1-Classification)
@@ -25,7 +25,7 @@ Visual Results
 <img src="/images/cropmosaicChanges.png" width="774" height="450">
   * [Legend](#Legend)
      * [Blue: Agreement](#Blue:-Agreement)
-     * [Green: Positive-Disagreement (B&D Classification  > Reference Map)](#Green:Positive-Disagreement(B&D-Classification->-Reference Map))
+     * [Green: Positive-Disagreement (B&D Classification  > Reference Map)](#Green-Positive-Disagreement(B&D-Classification-Reference Map))
 
 <!--te-->
 
