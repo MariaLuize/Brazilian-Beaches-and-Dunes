@@ -8,14 +8,6 @@ Visual Results
 * [Base Mosaic](#Base-Mosaic)
 <img src="/images/cropbaseMosaic.png" width="724" height="450">
 
-* [Reference Map - MapBiomas 4.1 Classification](#Reference-Map-MapBiomas-4.1-Classification)
-
-<img src="/images/cropReferenceMap.png" width="724" height="450">
-
-* [Beaches and Dunes classification](#Beaches-and-Dunes-classification)
-
-<img src="/images/cropBandD_classification.png" width="724" height="450">
-
 * [Changes](#Changes)
 
 <img src="/images/cropchanges.png" width="724" height="450">
@@ -32,3 +24,7 @@ Visual Results
 Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes classification]
 :-------------------------:|:-------------------------:
 ![](/images/cropReferenceMap.png)  |  ![](/images/cropBandD_classification.png)
+
+Changes           | Visualization of changes in the mosaic]
+:-------------------------:|:-------------------------:
+![](/images/cropchanges.png)  |  ![](/images/cropmosaicChanges.png)
