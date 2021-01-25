@@ -31,4 +31,4 @@ Visual Results
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](/images/cropbaseMosaic.png)  |  ![](/images/cropBandD_classification.png")
+![](/images/cropbaseMosaic.png)  |  ![](/images/cropBandD_classification.png)
