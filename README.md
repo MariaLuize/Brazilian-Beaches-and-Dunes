@@ -20,6 +20,9 @@ Visualization of final classification and statistics: https://code.earthengine.g
 * Visualization of changes in the mosaic
 
 <img src="/images/cropmosaicChanges.png" width="824" height="450">
+* Legend
+   - Blue: 
+   - Grenn:
 
 
 
