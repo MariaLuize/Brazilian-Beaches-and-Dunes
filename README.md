@@ -8,15 +8,10 @@ Visual Results
 * [Base Mosaic](#Base-Mosaic)
 <img src="/images/cropbaseMosaic.png" width="724" height="450">
 
-* [Changes](#Changes)
-
-<img src="/images/cropchanges.png" width="724" height="450">
-
 * [Visualization of changes in the mosaic](#Visualization-of-changes-in-the-mosaic)
   * Legend:
      * Blue: Agreement
      * Green: Positive-Disagreement (B&D Classification  > Reference Map)
-<img src="/images/cropmosaicChanges.png" width="724" height="450">
 
 
 <!--te-->
@@ -28,3 +23,6 @@ Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes cla
 Changes           | Visualization of changes in the mosaic]
 :-------------------------:|:-------------------------:
 ![](/images/cropchanges.png)  |  ![](/images/cropmosaicChanges.png)
+* Legend:
+     * Blue: Agreement
+     * Green: Positive-Disagreement (B&D Classification  > Reference Map)
