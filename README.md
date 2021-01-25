@@ -1,8 +1,10 @@
-Brazilian-Beaches-and-Dunes
-=================
-<!--ts-->
+# Brazilian-Beaches-and-Dunes
+
 Visualization of final classification and statistics: https://code.earthengine.google.com/11a49b8d9773c13faf909f55f813e80c?noload=1
 
+Visual Results
+=================
+<!--ts-->
 * [Base Mosaic](#Base Mosaic)
 <img src="/images/cropbaseMosaic.png" width="774" height="450">
 
