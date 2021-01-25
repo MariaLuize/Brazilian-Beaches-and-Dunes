@@ -4,6 +4,7 @@ Visualization of final classification and statistics: https://code.earthengine.g
 
 Visual Results
  * Classification Maps
+ 
 Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes Classification]
 :-------------------------:|:-------------------------:
 ![](/images/cropReferenceMap.png)  |  ![](/images/cropBandD_classification.png)
