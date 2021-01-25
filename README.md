@@ -1,11 +1,11 @@
 # Brazilian-Beaches-and-Dunes
 
-Visualization of final classification and statistics: https://code.earthengine.google.com/0ab409d9efd742c675e0c28d7e646b28?noload=1
+Visualization of final classification and statistics: https://code.earthengine.google.com/11a49b8d9773c13faf909f55f813e80c?noload=1
 
 * Base Mosaic
 ![](/images/cropbaseMosaic.png)
 
-* Reference Map - MapBiomas 4.0 Classification
+* Reference Map - MapBiomas 4.1 Classification
 ![ReferenceMap](/images/cropReferenceMap.png)
 
 * Beaches and Dunes_classification
