@@ -31,4 +31,4 @@ Visual Results
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](https://super.abril.com.br/wp-content/uploads/2020/06/25-06_DARK_SITE-1.jpg)  |  ![](https://images.theconversation.com/files/295442/original/file-20191003-52796-1763ajl.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop)
+![](/images/cropbaseMosaic.png)  |  ![](/images/cropBandD_classification.png")
