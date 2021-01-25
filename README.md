@@ -2,12 +2,12 @@
 
 Visualization of final classification and statistics: https://code.earthengine.google.com/0ab409d9efd742c675e0c28d7e646b28?noload=1
 
-![Base Mosaic](/images/baseMosaic.png)
+![Base Mosaic](/images/cropbaseMosaic.png)
 
-![ReferenceMap](/images/ReferenceMap.png)
+![ReferenceMap](/images/cropReferenceMap.png)
 
-![Beacges and Dunes_classification](/images/BandD_classification.png)
+![Beacges and Dunes_classification](/images/cropBandD_classification.png)
 
-![Changes](/images/changes.png)
+![Changes](/images/cropchanges.png)
 
-![Visualization of changes in the mosaic](/images/mosaicChanges.png)
+![Visualization of changes in the mosaic](/images/cropmosaicChanges.png)
