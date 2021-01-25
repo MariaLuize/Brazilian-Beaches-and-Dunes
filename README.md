@@ -12,9 +12,9 @@ Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes Cla
 
  * Comparation
 
-Changes           | Visualization of changes in the mosaic]
+Changes           | Visualization of changes in the mosaic
 :-------------------------:|:-------------------------:
 ![](/images/cropchanges.png)  |  ![](/images/cropmosaicChanges.png)
-* Legend:
-     * Blue: Agreement
-     * Green: Positive-Disagreement (B&D Classification  > Reference Map)
+ * Legend:
+      * Blue: Agreement
+      * Green: Positive-Disagreement (B&D Classification  > Reference Map)
