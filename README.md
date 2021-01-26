@@ -40,5 +40,23 @@ var table = ee.FeatureCollection("users/luizcf14/Artigo_Luize/ecossistemas_coste
           [-53.614819140625, -33.67429275769536],
           [-51.95588359375, -33.67429275769536],
           [-51.95588359375, -32.35235042278909]]], null, false);
+          
 }
+```
+```javascript
+// YEAR SELECTION
+var year = 1985
+var mosaic = ee.Image("projects/samm/SAMM/Mosaic/"+year+"_v2")
+
+// BASIC MOSAIC VISUALIZATION
+Map.addLayer(mosaic,imageVisParam,'Mosaic')
+
+// BLANK CANVAS FOR BETTER VISUALIZATION
+Map.addLayer(ee.Image(0),{palette:'FFFFFF'},'Blank',false)
+
+// REFERENCE MAP - MapBiomas 4.1
+var merge = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA4-FT/'+year).eq(23).unmask(0)
+var displacedMergeMask = merge.focal_max(4).reproject('EPSG:4326', null, 30)
+merge = merge.updateMask(displacedMergeMask.eq(1))
+Map.addLayer(merge,{palette:['white','red'],min:0,max:1},'Reference Mapbiomas 4.1',false)
 ```
