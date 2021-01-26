@@ -21,3 +21,9 @@ Changes           | Visualization of changes in the mosaic
  * Legend:
       * Blue: Agreement
       * Green: Positive-Disagreement (B&D Classification  > Reference Map)
+
+```javascript
+function test() {
+ console.log("look ma’, no spaces");
+}
+```
