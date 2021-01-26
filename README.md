@@ -23,7 +23,20 @@ Changes           | Visualization of changes in the mosaic
       * Green: Positive-Disagreement (B&D Classification  > Reference Map)
 
 ```javascript
-function test() {
- console.log("look ma’, no spaces");
+var table = ee.FeatureCollection("users/luizcf14/Artigo_Luize/ecossistemas_costeiros_maio2010"),
+    imageVisParam = {"opacity":1,"bands":["swir1","nir","red"],"min":100,"max":143,"gamma":1},
+    geometry = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[-53.614819140625, -32.35235042278909],
+          [-53.614819140625, -33.67429275769536],
+          [-51.95588359375, -33.67429275769536],
+          [-51.95588359375, -32.35235042278909]]], null, false);
 }
 ```
