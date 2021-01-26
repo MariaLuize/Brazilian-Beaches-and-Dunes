@@ -1,5 +1,18 @@
 # Brazilian-Beaches-and-Dunes
 
+Brazilian beaches play an important role in maintaining 
+human populations and in conserving biodiversity, being 
+largely impacted by anthropogenic and natural activities, 
+such as: tourism, pollution and sea level variations. The 
+present work uses machine learning techniques to classify 
+coastal sandy bodies in “beaches or dunes”, automatically 
+and systematically from 1985 to 2019 throughout the 
+Brazilian Coastal Zone (ZCB). In Brazil, the areas covered 
+by beaches and dunes reduced ~715 km² (around 16% of the 
+national cover). The South and Southeast regions
+experimented grater area reductions in comparison to the 
+North and Northeast regions.
+
 Visualization of final classification and statistics: https://code.earthengine.google.com/11a49b8d9773c13faf909f55f813e80c?noload=1
 
 Visual Results
