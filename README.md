@@ -55,7 +55,7 @@ var table = ee.FeatureCollection("users/luizcf14/Artigo_Luize/ecossistemas_coste
 var year = 1985
 
 // Basic mosaic visualization
-// ATTENTION: PLEASE, DO NOT MODIFY THIS FOLLOWING LINE
+// ATTENTION: PLEASE, DO NOT MODIFY THE FOLLOWING LINE
 var mosaic = ee.Image("projects/samm/SAMM/Mosaic/"+year+"_v2")
 Map.addLayer(mosaic,imageVisParam,'Mosaic')
 
@@ -65,7 +65,7 @@ Map.addLayer(ee.Image(0),{palette:'FFFFFF'},'Blank',false)
 
 * VISUALIZATION OF MapBiomas 4.1 CLASSIFICATION
 ```javascript
-// ATTENTION: PLEASE, DO NOT MODIFY THIS FOLLOWING LINES
+// ATTENTION: PLEASE, DO NOT MODIFY THE FOLLOWING LINES
 var merge = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA4-FT/'+year).eq(23).unmask(0)
 var displacedMergeMask = merge.focal_max(4).reproject('EPSG:4326', null, 30)
 merge = merge.updateMask(displacedMergeMask.eq(1))
@@ -81,7 +81,7 @@ Map.addLayer(points,{},'Points',false)
 ```
 * OUR BEACHES AND DUNES (B&D) CLASSIFICATION
 ```javascript
-// ATTENTION: PLEASE, DO NOT MODIFY THIS FOLLOWING LINES
+// ATTENTION: PLEASE, DO NOT MODIFY THE FOLLOWING LINES
 var BD_Classification = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA5-FT/'+year+'-8')
 ```
 * COMPARISON BETWEEN REFERENCE MAP (MapBiomas 4.1) AND B&D CLASSIFICATION
