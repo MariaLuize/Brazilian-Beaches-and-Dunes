@@ -35,56 +35,57 @@ Changes           | Visualization of changes in the mosaic
       * Blue: Agreement
       * Green: Positive-Disagreement (B&D Classification  > Reference Map)
 
-```javascript
 
-//IMPORTS
+How to utilize the source script for visualization of Beaches and  Dunes:
+* NECESSARY IMPORTS
+```javascript
 var table = ee.FeatureCollection("users/luizcf14/Artigo_Luize/ecossistemas_costeiros_maio2010"),
     imageVisParam = {"opacity":1,"bands":["swir1","nir","red"],"min":100,"max":143,"gamma":1},
     geometry = 
-    /* color: #d63000 */
-    /* shown: false */
-    /* displayProperties: [
-      {
-        "type": "rectangle"
-      }
-    ] */
     ee.Geometry.Polygon(
         [[[-53.614819140625, -32.35235042278909],
           [-53.614819140625, -33.67429275769536],
           [-51.95588359375, -33.67429275769536],
           [-51.95588359375, -32.35235042278909]]], null, false);
-          
 }
 ```
+* BASIC CONFIGURATIONS
 ```javascript
-// YEAR SELECTION
+// Year selection
 var year = 1985
-var mosaic = ee.Image("projects/samm/SAMM/Mosaic/"+year+"_v2")
 
-// BASIC MOSAIC VISUALIZATION
+// Basic mosaic visualization
+// ATTENTION: PLEASE, DO NOT MODIFY THIS FOLLOWING LINE
+var mosaic = ee.Image("projects/samm/SAMM/Mosaic/"+year+"_v2")
 Map.addLayer(mosaic,imageVisParam,'Mosaic')
 
-// BLANK CANVAS FOR BETTER VISUALIZATION
+// Blank canvas for better visualization of chances
 Map.addLayer(ee.Image(0),{palette:'FFFFFF'},'Blank',false)
+```
 
-// REFERENCE MAP - MapBiomas 4.1
+* VISUALIZATION OF MapBiomas 4.1 CLASSIFICATION
+```javascript
+// ATTENTION: PLEASE, DO NOT MODIFY THIS FOLLOWING LINES
 var merge = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA4-FT/'+year).eq(23).unmask(0)
 var displacedMergeMask = merge.focal_max(4).reproject('EPSG:4326', null, 30)
 merge = merge.updateMask(displacedMergeMask.eq(1))
 Map.addLayer(merge,{palette:['white','red'],min:0,max:1},'Reference Mapbiomas 4.1',false)
 ```
 
+* SORT POINTS
 ```javascript
-//SORT POINTS
 var points = merge.stratifiedSample(10000,'classification',geometry,30,null,1,[0,1],[5000,5000],true,1,true)
 print(points.size())
 print(points.first())
 Map.addLayer(points,{},'Points',false)
-
-// BEACHES AND DUNES (B&D) CLASSIFICATION
+```
+* OUR BEACHES AND DUNES (B&D) CLASSIFICATION
+```javascript
+// ATTENTION: PLEASE, DO NOT MODIFY THIS FOLLOWING LINES
 var BD_Classification = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA5-FT/'+year+'-8')
-
-// COMPARE REFERENCE MAP (MapBiomas 4.0) WITH B&D CLASSIFICATION
+```
+* COMPARISON BETWEEN REFERENCE MAP (MapBiomas 4.1) AND B&D CLASSIFICATION
+```javascript
 points= points.map(function(feat){
   return feat.set({'BD_Classification':BD_Classification.eq(23).reduceRegion(ee.Reducer.first(),feat.geometry(),30).get('classification')})
 })
@@ -94,8 +95,8 @@ Map.addLayer(BD_Classification.mask(BD_Classification.eq(23)),{palette:'blue'},'
 }
 ```
 
+* CORRELATIONS
 ```javascript
-//CORRELATIONS
 //No-change
 var noChangeP = BD_Classification.eq(23).and(merge.eq(1))
 var noChangeN = BD_Classification.neq(23).and(merge.eq(0))
@@ -111,14 +112,11 @@ var changes = ee.ImageCollection([ee.Image(1).toByte().mask(noChangeP),
                                   ee.Image(3).toByte().mask(nagativeDisagreement)
                                   ]).max().unmask(0)
 Map.addLayer(changes.mask(changes.gt(0)),{palette:['000000','0000FF','00FF00','FF0000'],min:0,max:3},'Changes')
-
 }
 ```
 
-
+* STATISTICS
 ```javascript
-
-//STATISTICS
 var statesBR = ee.FeatureCollection('users/luizcf14/Brasil/estados')
  var changesPerState = statesBR.map(function(feat){
       var nochangesP = noChangeP.reduceRegion({reducer:ee.Reducer.sum(),geometry:feat.geometry(),scale:30,maxPixels:1e13})
@@ -133,14 +131,13 @@ var statesBR = ee.FeatureCollection('users/luizcf14/Brasil/estados')
 
 ```
 
+* LOCALIZATION SET
 ```javascript
-
-// LOCALIZATION SET
 Map.setCenter(-52.5052,-32.8429,12)
 ```
-```javascript
 
-//POINTS BASED STATS
+* POINTS BASED STATS
+```javascript
 var errorM = points.errorMatrix('classification','BD_Classification')
 print(errorM)
 print('O.A',errorM.accuracy())
