@@ -66,7 +66,7 @@ Map.addLayer(ee.Image(0),{palette:'FFFFFF'},'Blank',false)
 * VISUALIZATION OF MapBiomas 4.1 CLASSIFICATION
 ```javascript
 // ATTENTION: PLEASE, DO NOT MODIFY THE FOLLOWING LINES
-var merge = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA4-FT/'+year).eq(23).unmask(0)
+var merge = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA4_1-FT/'+year).eq(23).unmask(0)
 var displacedMergeMask = merge.focal_max(4).reproject('EPSG:4326', null, 30)
 merge = merge.updateMask(displacedMergeMask.eq(1))
 Map.addLayer(merge,{palette:['white','red'],min:0,max:1},'Reference Mapbiomas 4.1',false)
@@ -126,8 +126,9 @@ var statesBR = ee.FeatureCollection('users/luizcf14/Brasil/estados')
       var sigla = feat.get('sigla')
     return ee.Feature(null,{'nochangeN':nochangesN.get('classification'),'nochangeP':nochangesP.get('classification'),'positive':positive.get('classification'),'negative':negative.get('classification'),'sigla':sigla})
  })
- print(changesPerState.first()) 
- Export.table.toDrive(changesPerState,'changes_per_state_2001_mapbiomas','results_BandD','changes_per_state_2001_mapbiomas')
+var changesPerState_Exemple = changesPerState.first()
+print('Brasilian state exemple: ', changesPerState_Exemple.get('sigla'), changesPerState_Exemple) 
+Export.table.toDrive(changesPerState,'changes_per_state_'+year+'_mapbiomas','results_BandD','changes_per_state_'+year+'_mapbiomas')
 
 ```
 
