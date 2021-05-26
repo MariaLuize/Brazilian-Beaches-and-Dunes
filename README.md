@@ -57,7 +57,7 @@ Map.addLayer(ee.Image(0),{palette:'FFFFFF'},'Blank',false)
 // ATTENTION: PLEASE, DO NOT MODIFY THE FOLLOWING LINES
 var merge = ee.Image('projects/mapbiomas-workspace/TRANSVERSAIS/ZONACOSTEIRA4_1-FT/'+year).eq(23).unmask(0)
 var displacedMergeMask = merge.focal_max(4).reproject('EPSG:4326', null, 30)
-merge = merge.updateMask(displacedMergeMask.eq(1))
+merge = merge.updateMask(displacedMergeMask.eq(1)).unmask(0)
 Map.addLayer(merge,{palette:['white','red'],min:0,max:1},'Reference Mapbiomas 4.1',false)
 ```
 
