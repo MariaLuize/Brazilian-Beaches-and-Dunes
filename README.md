@@ -21,7 +21,7 @@ Visual Results
 
  * Classification Maps
  
-Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes Classification]
+Reference Map - MapBiomas 4.1 Classification             | Beaches and Dunes Classification
 :-------------------------:|:-------------------------:
 ![](/images/cropReferenceMap.png)  |  ![](/images/cropBandD_classification.png)
 
