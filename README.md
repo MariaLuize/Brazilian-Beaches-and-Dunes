@@ -13,7 +13,7 @@ national cover). The South and Southeast regions
 experimented grater area reductions in comparison to the 
 North and Northeast regions.
 
-Visualization of final classification and statistics: https://code.earthengine.google.com/21c304490da4f4a4a3b0ff3d1fa18837?noload=1
+Visualization of final classification and statistics: https://code.earthengine.google.com/59f7f7d769aefabfb1378157decdd655?noload=1
 
 Visual Results
 * Base Mosaic
