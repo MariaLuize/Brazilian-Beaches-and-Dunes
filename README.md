@@ -140,7 +140,7 @@ Map.setCenter(-52.5052,-32.8429,12)
 * POINTS BASED STATS
 ```javascript
 var errorM = points.errorMatrix('classification','BD_Classification')
-print(errorM)
+print('Error Matrix',errorM)
 print('O.A',errorM.accuracy())
 print('Kappa',errorM.kappa())
 print('Consumer',errorM.consumersAccuracy())
