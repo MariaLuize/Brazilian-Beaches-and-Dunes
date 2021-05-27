@@ -2,7 +2,7 @@
 
 Brazilian beaches play an essential role in maintaining human populations and conserving biodiversity, being primarily impacted by anthropogenic and natural activities, such as tourism, pollution, and sea-level variations. The present work uses the Random Forest algorithm to automatically and systematically classify sandy coastal bodies as "beaches or dunes" from 1985 to 2019 throughout the Brazilian Coastal Zone (BCZ). In Brazil, the areas covered by beaches and dunes reduced ~714 km² (around 17% of the national cover). The South and Southeast regions experimented with more significant area reductions compared to the North and Northeast regions. Regarding concordance levels with pre-existent data, the general agreement of 1985 and 2019 data reached 0.85 and 0.97 of global agreement levels.
 
-Visualization of final classification and statistics: https://code.earthengine.google.com/59f7f7d769aefabfb1378157decdd655?noload=1
+Visualization of final classification and statistics: https://code.earthengine.google.com/51319edac2a0268ea71ad806e81f8e86
 
 Visual Results
 * Base Mosaic
