@@ -137,4 +137,4 @@ print('Producers',errorM.producersAccuracy())
 
 ```
 ## Supplementary Material
-For more information about de results obtained from the classification, graphics and statistical analysis, please consult the excel file [complete_Results_Brazil(1985-2019).xlsx](Supplementary Material/complete_Results_Brazil(1985-2019).xlsx). In which is possible to consult the complete data obtained from the methodology presented in the paper.
+For more information about de results obtained from the classification, graphics and statistical analysis, please consult the excel file [complete_Results_Brazil(1985-2019).xlsx](https://github.com/MariaLuize/Brazilian-Beaches-and-Dunes/blob/5243b1dd5514dfea560032cb8acec1b352f5a94b/Supplementary%20Material/complete_Results_Brazil(1985-2019).xlsx). In which is possible to consult the complete data obtained from the methodology presented in the paper.
