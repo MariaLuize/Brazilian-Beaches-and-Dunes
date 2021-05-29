@@ -26,7 +26,7 @@ Changes           | Visualization of changes in the mosaic
       * Green: Positive-Disagreement (B&D Classification  > Reference Map)
 
 
-## Usage of the source script to view Beaches and Dunes
+## Usage of the Source Script
 * NECESSARY IMPORTS
 ```javascript
 var table = ee.FeatureCollection("users/luizcf14/Artigo_Luize/ecossistemas_costeiros_maio2010"),
