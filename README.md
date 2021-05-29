@@ -136,3 +136,5 @@ print('Consumer',errorM.consumersAccuracy())
 print('Producers',errorM.producersAccuracy())
 
 ```
+## Supplementary Material
+For more information about de results obtained from the classification, graphics and statistical analysis, please consult the excel file [complete_Results_Brazil(1985-2019).xlsx]. In which is possible to consult the complete data obtained from the methodology presented in the paper.
