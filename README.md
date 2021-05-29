@@ -2,9 +2,10 @@
 
 Brazilian beaches play an essential role in maintaining human populations and conserving biodiversity, being primarily impacted by anthropogenic and natural activities, such as tourism, pollution, and sea-level variations. The present work uses the Random Forest algorithm to automatically and systematically classify sandy coastal bodies as "beaches or dunes" from 1985 to 2019 throughout the Brazilian Coastal Zone (BCZ). In Brazil, the areas covered by beaches and dunes reduced ~714 km² (around 17% of the national cover). The South and Southeast regions experimented with more significant area reductions compared to the North and Northeast regions. Regarding concordance levels with pre-existent data, the general agreement of 1985 and 2019 data reached 0.85 and 0.97 of global agreement levels.
 
+## Visualization Script (GEE)
 Visualization of final classification and statistics: https://code.earthengine.google.com/51319edac2a0268ea71ad806e81f8e86
 
-Visual Results
+## Visual Results
 * Base Mosaic
 ![](/images/cropbaseMosaic.png)
 
@@ -25,7 +26,7 @@ Changes           | Visualization of changes in the mosaic
       * Green: Positive-Disagreement (B&D Classification  > Reference Map)
 
 
-How to utilize the source script for visualization of Beaches and  Dunes:
+## Usage of the source script to view Beaches and Dunes
 * NECESSARY IMPORTS
 ```javascript
 var table = ee.FeatureCollection("users/luizcf14/Artigo_Luize/ecossistemas_costeiros_maio2010"),
@@ -137,4 +138,4 @@ print('Producers',errorM.producersAccuracy())
 
 ```
 ## Supplementary Material
-For more information about de results obtained from the classification, graphics and statistical analysis, please consult the excel file [complete_Results_Brazil(1985-2019).xlsx](https://github.com/MariaLuize/Brazilian-Beaches-and-Dunes/blob/5243b1dd5514dfea560032cb8acec1b352f5a94b/Supplementary%20Material/complete_Results_Brazil(1985-2019).xlsx). In which is possible to consult the complete data obtained from the methodology presented in the paper.
+For more information about de results obtained from the classification, graphics and statistical analysis, please consult the excel file [complete_Results_Brazil(1985-2019).xlsx](https://github.com/MariaLuize/Brazilian-Beaches-and-Dunes/blob/5243b1dd5514dfea560032cb8acec1b352f5a94b/Supplementary%20Material/complete_Results_Brazil(1985-2019).xlsx). It is possible to consult the complete data obtained from the methodology presented in the presented article.
